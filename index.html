@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qchess</title>
+    <link  rel="icon" type="image/png" href="img/logoi.jpg">
+
+<!-- Bootstrap Css -->
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+crossorigin="anonymous" />
+
+<!-- Css -->
+
+<link rel="stylesheet" href="css\main.css" />
+
+<!-- Bootstrap Js -->
+
+<script defer
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+	crossorigin="anonymous"></script>
+
+<!-- Jquery -->
+
+<script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+
+<!-- Js -->
+
+<script defer src="js\script.js"></script>
+
+
+</head>
+<body>
+    <div class="loader-wrapper">
+		<span class="loader"><span class="loader-inner"></span></span>
+	</div>
+    
+    <div class="modal" id="exampleModal" tabindex="-1"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog  modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="modal-title pe-1" id="exampleModalLabel">Hola
+						Visitante!</p>
+					<span><svg xmlns="http://www.w3.org/2000/svg" width="22"
+							height="22" fill="currentColor" class="bi bi-person-fill"
+							viewBox="0 0 16 16">
+            <path
+								d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+          </svg></span>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="login" method="post">
+
+						<div class="mb-3">
+							<label for="username" class="form-label">Usuario</label> <input
+								class="form-control" name="username">
+						</div>
+
+						<div class="mb-3">
+							<label for="password" class="form-label">Contraseña</label> <input
+								type="password" class="form-control" name="password">
+						</div>
+
+						<div class="d-grid gap-2">
+							<button type="submit" class="btn boton-iniciarS">Iniciar
+								Sesión</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="container">
+        <header class="header">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <div class="tam">
+                  <a class="navbar-brand" href="index.html"> <img class="img-logo" src="img/logoi.jpg" alt="">CHESS</a>
+                
+                </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link active" href="#">Inicio</a>
+                      <a class="nav-link active" href="https://www.udemy.com/course/ajedrez-desde-cero/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.ES_cc.LATAM&utm_term=_._ag_121424001739_._ad_515898216176_._kw__._de_c_._dm__._pl__._ti_dsa-1237025622652_._li_20011_._pd__._&matchtype=&gclid=Cj0KCQiAip-PBhDVARIsAPP2xc3n3tKFT9EfM2dObiLds6S-4eI6ixOvFPITgfriQegv29u_IfF45UYaAgxGEALw_wcB" target="_blank">Cursos</a>
+                      <a class="nav-link active" href="https://www.chess.com/es/lessons" target="_blank">Suscribete</a>
+                      <a class="nav-link active" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Contáctanos</a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+
+        <section class="row titular">
+            <div class="col-4">
+                <h1 class="main-text">Aprende ajedrez
+                desde nuevas <span class="sub-text">perspectivas</span>
+                </h1>
+                <p class="sub-p">¿Quieres aprender ajedrez desde un punto de vista nuevo? ¡No te lo pierdas!</p>
+                <a class="btn boton-comenzar" href="#">COMENZAR</a>
+            </div>
+                <div class="col-8">
+                    <!-- aca va la img -->
+                    <img class="img-dec"   src="img/header-img.png" alt="">
+                </div>
+           
+
+        </section>
+        </header>
+
+        <section class="row beneficios text-center">
+            <h2 class="section-title ">Beneficios</h2>
+            <div class="col-sm">
+                <div class="card  align-items-center">
+                    <i class="bi bi-house-door"></i>
+                    <div class="card-body text-center">
+                        <p class="card-text">Comodidad</p>
+                      <p class="card-text sub-p">Entrena desde tu casa de forma virtual; con los mejores coaches de todo el mundo</p>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="col-sm"><div class="card align-items-center">
+            
+                <i class="bi bi-book"></i>
+                <div class="card-body text-center">
+                  
+                    <p class="card-text">Aprendizaje</p>
+                  <p class="card-text sub-p">La biblioteca físico/virtual más grande ofrece  conocimientos de los módulos más avanzados</p>
+                </div>
+              
+              </div></div>
+            <div class="col-sm"><div class="card align-items-center">
+                <i class= "bi-bar-chart"></i>
+                <div class="card-body text-center">
+                    <p class="card-text">Rendimiento</p>
+                  <p class="card-text sub-p">Evidencia neurocientífica apoya que el ajedrez mejora el rendimiento académico en la escuela.</p>
+                </div>
+              
+              </div></div>
+        </section>
+        <section class="blog">
+            <h3 class="section-title2">Te podría interesar</h3>
+
+            <div class="card mb-4">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/niña.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Ajedrez en las escuelas</h5>
+                      <p class="card-text">Las áreas más beneficiadas parecen ser las matemáticas y la lectura. Para validar lo anterior se describen diversos trabajos científicos que muestran la activación cerebral a través de imágenes de resonancia magnética cuando los jugadores de ajedrez novatos, intermedios o avanzados practican este juego. Con base en ello se sugiere usar el ajedrez como una herramienta que permita la mejora del rendimiento escolar en niños y niñas...</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/gambito.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Gámbito de dama: el impacto de la...</h5>
+                      <p class="card-text">A solo un mes de su estreno, la producción protagonizada por Anya Taylor-Joy figura como la más reproducida en el servicio de streaming. Junto con ello, las ventas de tableros de ajedrez aumentaron hasta en un 1.080%, mientras que las membresías en clubes de juego y las partidas en línea también van al alza... </p>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    
+                    <img src="img/judit.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+
+                      
+                    <div class="card-body">
+                          
+                      <h5 class="card-title">La reina del ajedrez: Beth Harmon de la vida real</h5>
+                      <p class="card-text">Judit Polgár (Budapest, Hungría, 23 de julio de 1976) es una ajedrecista húngara ya retirada, considerada la mejor jugadora de ajedrez de la historia. En 1991 obtuvo el título de Gran Maestro Internacional a la edad de 15 años y cuatro meses, convirtiéndose en su momento en la persona más joven en obtenerlo, rompiendo el récord que ostentaba anteriormente el ex Campeón del Mundo Bobby Fischer... </p>
+                 
+                    </div>
+                 
+                  </div>
+               
+                </div>
+              </div>
+              
+                  
+                  </div>
+                </div>
+              </div>
+        </section>
+    </div>
+
+    <footer class="footerr">
+      <p class="p-pos">
+        © UNTITLED. ALL RIGHTS RESERVED 
+      </p>
+      
+    </footer>
+</body>
+</html>
